@@ -45,7 +45,7 @@ The acceptance testing phase is critical for MEO's success as it represents the 
 
 **Safety and Security**: Given MEO's focus on facilitating real-world meetings, the acceptance phase rigorously tests identity verification systems, reporting mechanisms, and user safety features. Any security vulnerabilities discovered during this phase can be addressed before potentially putting users at risk.
 
-**User Experience Quality**: The unique card-based profile system, date coordination features, and matching algorithms must function seamlessly. Acceptance testing validates that these innovative features are intuitive, reliable, and enhance rather than complicate the user experience.
+**User Experience Quality**: The unique card-based profile system, date coordination features, and matching algorithms must function seamlessly. Acceptance testing validates that these features are intuitive, reliable, and enhance rather than complicate the user experience.
 
 **Technical Reliability**: As users progress quickly from matching to meeting, the application must perform consistently across different devices, network conditions, and usage scenarios. System crashes or data loss during critical moments (like date setup) could severely impact user trust and safety.
 
