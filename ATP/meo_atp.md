@@ -83,6 +83,10 @@ These add significant value without being absolutely essential for basic operati
 - **User Reporting System**: Safety mechanism for reporting inappropriate behavior
 - **Profile Management**: Editing, pausing, and deleting user profiles
 - **Notification System**: Push notifications for matches, dates, and reminders
+- **Partner Registration**: Onboarding system for restaurants, cafés, entertainment venues to join as MEO partners
+- **Venue Profile Management**: Interface for partners to update business information, photos, special offers, and availability
+Analytics Dashboard: Performance metrics showing venue selection frequency, date bookings, and user engagement
+- **Promotion Management**: Tools for creating and managing special offers exclusive to MEO users
 
 ### 2.3 User Interface
 
@@ -102,6 +106,14 @@ Ensuring the application functions correctly across different platforms and cond
 - **Network Conditions**: Performance under various internet connectivity scenarios (WiFi, 5G, 4G)
 - **Device Compatibility**: Functionality across different screen sizes and resolutions
 - **System Integration**: Calendar integration, location services, and camera access
+
+### 2.5 Monetization Features
+Revenue-generating functionalities that support the application's business model:
+
+- **Premium Subscription System**: Tiered subscription plans offering enhanced features like unlimited likes, advanced filters, profile boost, and priority matching
+- **In-App Advertising Platform**: Targeted advertisements for local businesses, restaurants, entertainment venues, and dating-related services
+Sponsored Location Partnerships: Featured placement of partner venues in date location suggestions
+- **Premium Profile Features**: Enhanced profile customization options, additional card types, and verified badges for subscribers
 
 ---
 
@@ -226,3 +238,60 @@ Ensuring the application functions correctly across different platforms and cond
 | **Prerequisites**   | - Fresh installation of application<br>- Valid phone number for registration<br>- Device camera and location access available<br>- Profile photos ready for upload                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | **Steps**           | 1. Complete phone number registration with OTP<br>2. Enter first name and personal information<br>3. Input and verify birth date<br>4. Select gender with optional precision<br>5. Upload clear profile picture<br>6. Set location (GPS or manual entry)<br>7. Fill in physical attributes<br>8. Add professional information<br>9. Configure lifestyle habits<br>10. Set personality traits<br>11. Configure initial match preferences<br>12. Complete profile verification steps<br>13. Create first profile cards<br>14. Set up favorite places<br>15. Review completed profile |
 | **Expected Result** | - Complete onboarding process flows smoothly<br>- All required fields can be completed<br>- Optional fields can be skipped appropriately<br>- Location services work properly<br>- Profile picture upload succeeds<br>- Validation prevents invalid data entry<br>- Default preferences apply when fields skipped<br>- User reaches functional home screen<br>- Profile appears complete and attractive<br>- User ready to start matching process                                                                                                                                  |
+---
+#### **Scenario 11: Premium Subscription Management**
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Functionality** | Premium subscription purchase, management, and feature access |
+| **Objective** | Verify users can successfully subscribe, access premium features, and manage their subscriptions |
+| **Prerequisites** | - User has completed basic profile setup<br>- Valid payment method available<br>- App store/payment processor integration functional<br>- Internet connectivity available |
+| **Steps** | 1. Navigate to subscription/premium section<br>2. Review available subscription tiers and pricing<br>3. Select desired subscription plan<br>4. Complete payment process through app store<br>5. Verify subscription activation confirmation<br>6. Test premium features access:<br>&nbsp;&nbsp;&nbsp;- Unlimited likes functionality<br>&nbsp;&nbsp;&nbsp;- Advanced filter options<br>&nbsp;&nbsp;&nbsp;- Profile boost feature<br>&nbsp;&nbsp;&nbsp;- Priority in matching queue<br>&nbsp;&nbsp;&nbsp;- Enhanced profile customization<br>7. Navigate to subscription management<br>8. Test subscription modification/cancellation<br>9. Verify grace period functionality<br>10. Test subscription renewal process |
+| **Expected Result** | - Subscription purchase completes successfully<br>- Premium features unlock immediately after payment<br>- All advertised premium functionalities work properly<br>- Subscription can be managed from within app<br>- Cancellation process is clear and functional<br>- Users retain premium features until expiration<br>- Renewal notifications work appropriately<br>- Free tier users see appropriate upgrade prompts |
+
+---
+
+#### **Scenario 12: In-App Advertising Display and Interaction**
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Functionality** | Targeted advertising display, interaction tracking, and revenue generation |
+| **Objective** | Validate advertisement display, user interaction, and integration with core app features |
+| **Prerequisites** | - User is logged in (free or premium tier)<br>- Location services enabled<br>- Advertisement inventory available<br>- Analytics tracking functional |
+| **Steps** | 1. Navigate through main app sections<br>2. Observe advertisement placement locations<br>3. Verify ads are contextually relevant:<br>&nbsp;&nbsp;&nbsp;- Local restaurants and venues<br>&nbsp;&nbsp;&nbsp;- Dating-related services<br>&nbsp;&nbsp;&nbsp;- Location-based businesses<br>4. Test advertisement interaction:<br>&nbsp;&nbsp;&nbsp;- Tap on restaurant advertisement<br>&nbsp;&nbsp;&nbsp;- Verify external link functionality<br>&nbsp;&nbsp;&nbsp;- Test "Add to Favorites" from ad<br>5. Check ad frequency and placement balance<br>6. Verify premium users see fewer/no ads<br>7. Test ad loading performance<br>8. Verify appropriate content filtering<br>9. Test advertisement reporting functionality<br>10. Validate analytics tracking (if accessible) |
+| **Expected Result** | - Advertisements display in designated areas without disrupting UX<br>- Ads are relevant to user location and interests<br>- External links work correctly and safely<br>- Advertisement interaction enhances rather than interrupts user flow<br>- Premium subscribers experience reduced ad frequency<br>- Ad loading doesn't significantly impact app performance<br>- Inappropriate content is filtered out<br>- Users can report problematic advertisements<br>- Advertisement revenue tracking functions properly |
+
+---
+#### **Scenario 13: Sponsored Location Integration**
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Functionality** | Featured placement of partner venues in date suggestions and favorites |
+| **Objective** | Verify sponsored locations appear appropriately in date setup without compromising user experience |
+| **Prerequisites** | - User has matched with another verified user<br>- Sponsored venue partnerships active<br>- Location services enabled<br>- Date setup process accessible |
+| **Steps** | 1. Navigate to date setup with a match<br>2. Access location selection interface<br>3. Observe sponsored venue placement:<br>&nbsp;&nbsp;&nbsp;- Featured section visibility<br>&nbsp;&nbsp;&nbsp;- Sponsored badge/indicator present<br>&nbsp;&nbsp;&nbsp;- Integration with regular suggestions<br>4. Test selecting a sponsored venue<br>5. Verify venue details and information accuracy<br>6. Check special offers or benefits display<br>7. Test venue contact information and directions<br>8. Observe sponsored venues in "Add to Favorites"<br>9. Verify balance between sponsored and organic results<br>10. Test across different geographic locations |
+| **Expected Result** | - Sponsored venues appear prominently but naturally<br>- Clear labeling identifies sponsored content<br>- Venue information is accurate and complete<br>- Special offers/benefits are clearly communicated<br>- User can easily access venue details and directions<br>- Sponsored placement doesn't overwhelm organic suggestions<br>- Feature enhances rather than detracts from user experience<br>- Geographic relevance is maintained<br>- Integration with favorites system works smoothly |
+
+---
+
+#### **Scenario 14: Premium Feature Access Control**
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Functionality** | Proper restriction and granting of premium features based on subscription status |
+| **Objective** | Ensure premium features are properly gated and accessible only to paying subscribers |
+| **Prerequisites** | - Test accounts with different subscription statuses<br>- Free tier account available<br>- Active premium subscription account available<br>- Expired subscription account available |
+| **Steps** | 1. Test with free tier account:<br>&nbsp;&nbsp;&nbsp;- Attempt to access advanced filters<br>&nbsp;&nbsp;&nbsp;- Try to use profile boost<br>&nbsp;&nbsp;&nbsp;- Test like limit enforcement<br>&nbsp;&nbsp;&nbsp;- Verify upgrade prompts appear<br>2. Test with active premium subscription:<br>&nbsp;&nbsp;&nbsp;- Access all premium features successfully<br>&nbsp;&nbsp;&nbsp;- Verify unlimited likes functionality<br>&nbsp;&nbsp;&nbsp;- Test enhanced profile options<br>&nbsp;&nbsp;&nbsp;- Confirm priority matching<br>3. Test with expired subscription:<br>&nbsp;&nbsp;&nbsp;- Verify features are properly restricted<br>&nbsp;&nbsp;&nbsp;- Check grace period functionality<br>&nbsp;&nbsp;&nbsp;- Test reactivation process<br>4. Test subscription upgrade process<br>5. Verify feature availability messaging |
+| **Expected Result** | - Free users cannot access premium features<br>- Clear messaging explains feature restrictions<br>- Upgrade prompts are helpful, not intrusive<br>- Premium users have full access to paid features<br>- Feature restrictions apply immediately after expiration<br>- Grace period policies work as designed<br>- Upgrade process is smooth and functional<br>- No unauthorized access to premium content |
+
+---
+
+#### **Scenario 15: Partner Portal Management**
+
+| **Field** | **Details** |
+|-----------|-------------|
+| **Functionality** | Web-based partner dashboard for venue management and promotion |
+| **Objective** | Verify partners can successfully register, manage their venues, and track performance through the portal |
+| **Prerequisites** | - Partner portal website accessible<br>- Valid business information available<br>- Business verification documents<br>- Internet connectivity<br>- Web browser compatibility |
+| **Steps** | 1. Navigate to partner registration portal<br>2. Complete business registration form:<br>&nbsp;&nbsp;&nbsp;- Business name and type<br>&nbsp;&nbsp;&nbsp;- Contact information<br>&nbsp;&nbsp;&nbsp;- Address and location details<br>&nbsp;&nbsp;&nbsp;- Business license/verification<br>3. Submit registration and await approval<br>4. Log into approved partner dashboard<br>5. Complete venue profile setup:<br>&nbsp;&nbsp;&nbsp;- Upload venue photos<br>&nbsp;&nbsp;&nbsp;- Add business description<br>&nbsp;&nbsp;&nbsp;- Set operating hours<br>&nbsp;&nbsp;&nbsp;- Configure capacity/availability<br>6. Create special MEO user promotion<br>7. Test analytics dashboard:<br>&nbsp;&nbsp;&nbsp;- View venue selection metrics<br>&nbsp;&nbsp;&nbsp;- Check user engagement data<br>&nbsp;&nbsp;&nbsp;- Review promotion performance<br>8. Update venue information<br>9. Test promotion activation/deactivation<br>10. Verify changes reflect in mobile app |
+| **Expected Result** | - Registration process completes smoothly<br>- Business verification works properly<br>- Partner dashboard is intuitive and functional<br>- Venue profile updates sync with mobile app<br>- Analytics provide meaningful insights<br>- Promotion management is straightforward<br>- Real-time data synchronization works<br>- Partners can effectively manage their MEO presence<br>- System prevents unauthorized access<br>- Integration between web portal and mobile app is seamless |
